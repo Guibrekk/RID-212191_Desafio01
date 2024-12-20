@@ -66,18 +66,18 @@
   } 
 
 .image-box{
-  margin-right: 80px;
+  margin-right: 10px;
 }
 .conteudo h1 {
   font-size: 54px;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 100px;
  font-weight: 470;
 }
 
 .conteudo p {
   font-size: 35px;
-  margin-left: 50px;
+  margin-left: 30px;
   margin-top: 30px;
   font-weight: 300;
   padding-bottom: 410px;
@@ -130,3 +130,56 @@ button:hover{
   box-shadow: 0px 15px 20px #25190d9a;
   transition-duration: 0.5s;
 }
+
+/* CARROSSEL IMAGENS */
+
+.imagens{
+  border: 0px;
+  border-radius: 50px;
+}
+#banheiro{
+  display: none;
+}
+
+#quarto{
+  display: none;
+}
+
+#escritorio{
+  display: none;
+}
+
+.image-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  }
+  
+  
+  .seta {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 2;
+
+  }
+  
+  
+  #seta-esquerda {
+  left: 30px;
+
+  }
+  
+  
+  #seta-direita {
+  right: 120px;
+  
+  }
+
+  .seta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 20px #ffffff;
+    transition-duration: 0.5s;
+
+
+  }

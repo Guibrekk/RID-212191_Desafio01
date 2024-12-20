@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arquitetura</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Remova esta linha para evitar duplicação -->
+    <!-- <script src="index.js"></script> -->
 </head>
 <body>
-    <!-- MENU SUPERIOR -->
+
+<!-- MENU SUPERIOR -->
 <div id="menusuperior">
-    <script src="index.js"></script>
     <h1 id="titulo-menusuperior"> Tradição em projetos de arquitetura </h1>
     <p id="texto-menusuperior">Arquitetura residencial e comercial. </p>
-
 </div>
 
 <!-- MENU INFORMACIONAL -->
 <div id="menuinformacional">
-    
     <div class="info-box">
       <h1>850</h1>
       <p>empreendimentos construídos</p>
@@ -35,12 +35,10 @@
       <h1>2,000,000</h1>
       <p>m² em projetos construídos</p>
     </div>
-
-  </div>
+</div>
   
-  <!-- MENU IMAGEM -->
-
-   <div class="text-box">
+<!-- MENU IMAGEM -->
+<div class="text-box">
     <div class="conteudo">
       <h1>Arquitetos com História e Experiência.</h1>
       <p>
@@ -52,11 +50,20 @@
       </p>
     </div>
     <div class="image-box">
-      <img id="apartamento" width="700" height="900"  src="apartamento.svg" alt="Foto de Apartamento">
+        <!-- As setas estão corretas -->
+        <img id="seta-esquerda" onclick="RolarParaEsquerda()" class="seta" src="icones/setaesquerda.svg" alt="Left arrow">
+        
+        <!-- Imagens do carrossel -->
+        <img id="apartamento" width="700" height="900" src="imagens/apartamento.svg" alt="Apartment photo" class="imagens">
+        <img id="banheiro" width="700" height="900" src="imagens/banheiro.jpg" alt="Bathroom photo" class="imagens" style="display:none;">
+        <img id="quarto" width="700" height="900" src="imagens/quarto.png" alt="Bedroom photo" class="imagens" style="display:none;">
+        <img id="escritorio" width="700" height="900" src="imagens/escritorio.png" alt="Office photo" class="imagens" style="display:none;">
+        
+        <img id="seta-direita" onclick="RolarParaDireita()" class="seta" src="icones/setadireita.svg" alt="Right arrow">
     </div>
-  </div> 
+</div>
 
-  <!-- FORMULARIO -->
+<!-- FORMULARIO -->
 <div id="formulario">
   <h1 id="titulo-formulario">Conheça mais sobre nossos serviços:</h1>
   <form action="https://api.sheetmonkey.io/form/9Uryw3V59jiwH53g2964S8" method="post">
@@ -64,12 +71,9 @@
       <input type="email" placeholder="Email *" name="Email" required> <br><br><br>
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
       <button type="submit">Fale Conosco</button>
-
     </form>
-  </div>
+</div>
 
-
-
-    
+<script src="index.js"></script>
 </body>
 </html>
